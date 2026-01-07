@@ -1,10 +1,19 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import Link from "next/link";
 
 export default function Home() {
   return (
     <div className={styles.page}>
       <main className={styles.main}>
+        <div style={{ marginBottom: 20 }}>
+          <Link
+            href="/login"
+            style={{ fontSize: 20, color: "blue", textDecoration: "underline" }}
+          >
+            Go to Login Implementation
+          </Link>
+        </div>
         <Image
           className={styles.logo}
           src="/next.svg"
